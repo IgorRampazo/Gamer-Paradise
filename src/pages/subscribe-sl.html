@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="../../assets/img/favicom.png" type="image/x-icon">
+   <!-- Link File(s) CSS -->
+   <link rel="stylesheet" href="../../assets/css/_header.css">
+   <link rel="stylesheet" href="../../assets/css/_form.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+   <!-- Link File(s) JS -->
+   <script src="../../assets/js/ctrl-cad-sl.js" defer></script>
+   <script src="../../assets/js/ctrl-list-options.js" defer></script>
+   <title>Gamer Paradise ⋄ Inscrição - Solo</title>
+</head>
+<body>
+   
+   <!-- navegação -->
+   <header>
+      <div class="left">
+         <a href="../../index.html" class="back"><i class="fa-solid fa-chevron-left"></i></a>
+         <a href="../../index.html"><img src="../../assets/img/logo-gp.png" alt="logo gamer paradise" class="logo"></a>
+      </div>
+   </header>
+   
+   <!-- Detalhes -->
+   <section class="container">
+        <h1 class="title">cadastrar-se</h1>
+        <form action="./subscribe-sl.html" id="form-sl">
+            <div class="field">
+                <label for="nome">Nome <span>*</span></label>
+                <input type="text" name="nome" id="nome" placeholder="Insira seu Nome..." required>
+            </div>
+            <div class="field">
+                <label for="telefone">Telefone <span>*</span></label>
+                <input type="tel" name="telefone" id="telefone" placeholder="Telefone" required>
+            </div>
+            <div class="field">
+                <label for="camp">Campeonato <span>*</span></label>
+                <select name="camp" id="camp-slc" required>
+                    <option value="" selected disabled>Selecione</option>
+                </select>
+            </div>
+            <button type="submit">Cadastrar</button>
+        </form>
+        <a href="./subscribe-tm.html" class="link-b">Cadastrar Equipe</a>
+   </section>
+
+   <!-- Rodapé -->
+   <footer>
+      <p>© 2024 Desenvolvido por Game Paradise. Todos os direitos reservados</p>
+   </footer>
+</body>
+</html>

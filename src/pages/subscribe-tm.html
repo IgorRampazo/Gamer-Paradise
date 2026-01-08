@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="../../assets/img/favicom.png" type="image/x-icon">
+   <!-- Link File(s) CSS -->
+   <link rel="stylesheet" href="../../assets/css/_header.css">
+   <link rel="stylesheet" href="../../assets/css/_form.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+   <!-- Link File(s) JS -->
+   <script src="../../assets/js/ctrl-cad-gp.js" defer></script>
+   <script src="../../assets/js/ctrl-list-options.js" defer></script>
+   <title>Gamer Paradise ⋄ Inscrição - Solo</title>
+</head>
+<body>
+   
+   <!-- navegação -->
+   <header>
+      <div class="left">
+         <a href="../../index.html" class="back"><i class="fa-solid fa-chevron-left"></i></a>
+         <a href="../../index.html"><img src="../../assets/img/logo-gp.png" alt="logo gamer paradise" class="logo"></a>
+      </div>
+
+      <input type="checkbox" name="menu" id="menu">
+      <label for="menu" id="b-menu"><i class="fa-solid fa-bars"></i></label>
+
+      <ul>
+         <button class="shop mn">Ir à Loja</button>
+      </ul>
+
+      <button class="shop">Ir à Loja</button>
+   </header>
+   
+   <!-- Detalhes -->
+   <section class="container eq">
+        <h1 class="title">cadastrar Equipe</h1>
+        <form action="./subscribe-tm.html" id="form-gp">
+            <div class="field">
+                <label for="team-name">Nome da Equipe <span>*</span></label>
+                <input type="text" name="team_name" id="team_name" placeholder="Nome da equipe..." required>
+            </div>
+            <div class="field">
+                <label for="mb_1">1° Membro <span>*</span></label>
+                <input type="text" name="mb_1" id="mb_1" placeholder="Nome do 1° Membro..." required>
+            </div>
+            <div class="field">
+                <label for="mb_2">2° Membro <span>*</span></label>
+                <input type="text" name="mb_2" id="mb_2" placeholder="Nome do 2° Membro..." required>
+            </div>
+            <div class="field">
+                <label for="mb_3">3° Membro</label>
+                <input type="text" name="mb_3" id="mb_3" placeholder="Nome do 3° Membro..." required>
+            </div>
+            <div class="field">
+                <label for="mb_4">4° Membro</label>
+                <input type="text" name="mb_4" id="mb_4" placeholder="Nome do 4° Membro..." required>
+            </div>
+            <div class="field">
+                <label for="mb_5">5° Membro</label>
+                <input type="text" name="mb_5" id="mb_5" placeholder="Nome do 5° Membro..." required>
+            </div>
+            <div class="field">
+                <label for="telefone">Telefone <span>*</span></label>
+                <input type="text" name="telefone" id="telefone" placeholder="(18) 99683-0946" required>
+            </div>
+            <div class="field">
+                <label for="">Campeonato <span>*</span></label>
+                <select name="mb" id="camp-slc" required>
+                    <option value="" selected disabled>Selecione</option>
+                </select>
+            </div>
+            <button type="submit">Cadastrar</button>
+        </form>
+        <a href="./subscribe-sl.html" class="link-b">Cadastrar Solo</a>
+   </section>
+
+   <!-- Rodapé -->
+   <footer>
+      <p>© 2024 Desenvolvido por Game Paradise. Todos os direitos reservados</p>
+   </footer>
+</body>
+</html>

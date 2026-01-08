@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="../../assets/img/favicom.png" type="image/x-icon">
+   <!-- Link File(s) CSS -->
+   <link rel="stylesheet" href="../../assets/css/_header.css">
+   <link rel="stylesheet" href="../../assets/css/_form.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+   <title>Gamer Paradise ⋄ Inscrição - Solo</title>
+</head>
+<body>
+   
+   <!-- navegação -->
+   <header>
+      <div class="left">
+         <a href="../../index.html"><img src="../../assets/img/logo-gp.png" alt="logo gamer paradise" class="logo"></a>
+      </div>
+   </header>
+   
+   <!-- Detalhes -->
+   <section class="container eq">
+        <h1 class="title">Editar Equipe</h1>
+        <form action="./update-tm.html" method="post">
+            <div class="field">
+                <label for="team-name">Nome da Equipe <span>*</span></label>
+                <input type="text" name="team-name" id="team-name" placeholder="Nome da equipe..." value="Vorpal Swords" required>
+            </div>
+            <div class="field">
+                <label for="mb_1">1° Membro <span>*</span></label>
+                <input type="text" name="mb_1" id="mb_1" placeholder="Nome do 1° Membro..." value="Igor Rampazo" required>
+            </div>
+            <div class="field">
+                <label for="mb_2">2° Membro <span>*</span></label>
+                <input type="text" name="mb_2" id="mb_2" placeholder="Nome do 2° Membro..." value="Gabriel Martins" required>
+            </div>
+            <div class="field">
+                <label for="mb_3">3° Membro</label>
+                <input type="text" name="mb_3" id="mb_3" placeholder="Nome do 3° Membro...">
+            </div>
+            <div class="field">
+                <label for="mb_4">4° Membro</label>
+                <input type="text" name="mb_4" id="mb_4" placeholder="Nome do 4° Membro...">
+            </div>
+            <div class="field">
+                <label for="mb_5">5° Membro</label>
+                <input type="text" name="mb_5" id="mb_5" placeholder="Nome do 5° Membro...">
+            </div>
+            <div class="field">
+                <label for="telefone">Telefone <span>*</span></label>
+                <input type="text" name="telefone" id="telefone" placeholder="(18) 99683-0946" value="18996830946" required>
+            </div>
+            <div class="field">
+                <label for="">Campeonato <span>*</span></label>
+                <select name="mb" id="mb" required>
+                    <option value="" selected>League of Legends | 20/09/2024</option>
+                    <option value="lol_09-24">Valorant | 20/09/2024</option>
+                </select>
+            </div>
+            <button type="submit">Salvar Alterações</button>
+        </form>
+   </section>
+
+   <!-- Rodapé -->
+   <footer>
+      <p>© 2024 Desenvolvido por Game Paradise. Todos os direitos reservados</p>
+   </footer>
+</body>
+</html>

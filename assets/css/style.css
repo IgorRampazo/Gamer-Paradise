@@ -1,0 +1,512 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@font-face 
+{
+   font-family: 'Paradise';
+   src: url(../fonts/Paradise-font.ttf);
+}
+
+*
+{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', Arial, Helvetica, sans-serif;
+   text-decoration: none;
+   list-style: none;
+}
+
+html {scroll-behavior: smooth;}
+
+a, button {cursor: pointer !important;}
+
+body
+{
+   width: 100%;
+   background: #000;
+}
+
+body::-webkit-scrollbar
+{
+   width: 6px;
+   background: #000;
+}
+
+body::-webkit-scrollbar-thumb
+{
+   width: 100%;
+   background: #555;
+}
+
+.cover
+{
+   position: absolute;
+   inset: 0;
+   width: 100%;
+   height: 100vh;
+   z-index: -1;
+   overflow: hidden;
+}
+
+.cover::before
+{
+   position: absolute;
+   content: '';
+   inset: 0;
+   width: 100%;
+   height: 100vh;
+   background: linear-gradient(0, #000000, #000000ad);
+}
+
+.cover img
+{
+   width: 100%;
+   height: 120%;
+   object-fit: cover;
+   opacity: 1;
+   user-select: none;
+   pointer-events: none;
+}
+
+section {padding: 1.5rem 2rem;}
+
+/* *** Conteúdo *** */
+
+.title
+{
+   color: #fff;
+   font-size: 1.4rem;
+   text-align: center;
+   font-family: 'Paradise';
+   margin: 8rem 0 2rem 0;
+}
+
+.dtl
+{
+   max-width: 1300px;
+   margin: 120px auto 50px auto;
+}
+
+.dtl.ap
+{
+   margin-top: 18rem;
+}
+
+.dtl.ap .logo 
+{
+   color: #fff;
+   font-size: 2rem;
+   font-family: 'Paradise';
+   max-width: 550px;
+}
+
+.dtl.ap .describe
+{
+   color: #666;
+   margin: 1.5rem 0 2.5rem 0;
+   max-width: 800px;
+   font-size: 1rem;
+}
+
+.dtl.ap .adquire
+{
+   border: none;
+   background: #539348;
+   padding: .8rem 2rem;
+   font-size: .9rem;
+   margin-right: 8px;
+   color: #000;
+}
+
+.dtl.ap .preview
+{
+   border: .5px solid #666;
+   background: #ffffff05;
+   backdrop-filter: blur(5px);
+   padding: .8rem 2rem;
+   color: #999;
+}
+
+/* *** Partidas *** */
+
+.matches
+{
+   position: relative;
+   padding: 1rem;
+   max-width: 1300px;
+   margin: 0 auto;
+   background: #ffffff05;
+   border: .5px solid #cccccc15;
+   backdrop-filter: blur(5px);
+}
+
+.matches h1
+{
+   text-align: center;
+   text-transform: uppercase;
+   color: #ddd;
+   font-style: italic;
+   margin-top: 4rem;
+}
+
+.matches ul
+{
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 1.5rem;
+   margin: 3rem 0;
+}
+
+.matches ul li
+{
+   color: #aaa;
+   font-size: .8rem;
+}
+
+.matches ul li i 
+{
+   margin-right: 1rem;
+   color: rgb(107, 97, 63);
+}
+
+.matches :is(.min, .max)
+{
+   position: absolute;
+   padding: .5rem .7rem;
+   background: #539348;
+   font-size: .85rem;
+}
+
+.matches .min {inset: 1rem auto auto 1rem;}
+.matches .max {inset: 1rem 1rem auto auto;}
+
+.matches .rw-btn
+{
+   display: flex;
+   justify-content: center;
+   gap: 1rem;
+}
+
+.rw-btn .sub
+{
+   border: none;
+   background: #539348;
+   padding: .6rem 1.5rem;
+   font-size: .85rem;
+   margin-right: 8px;
+   color: #000;
+}
+
+.rw-btn .mmt
+{
+   border: .5px solid #666;
+   background: #ffffff05;
+   backdrop-filter: blur(5px);
+   padding: .6rem 1.5rem;
+   font-size: .85rem;
+   color: #999;
+}
+
+/* *** Informações *** */
+
+.dtl .bl-info
+{
+   display: flex;
+   flex-direction: row-reverse;
+   gap: 6rem;
+   margin-bottom: 6rem;
+}
+
+.bl-info:nth-last-of-type(even)
+{
+   flex-direction: row;
+}
+
+.bl-info .cv
+{
+   flex: 3;
+   height: 300px;
+   overflow: hidden;
+   position: relative;
+}
+
+.bl-info .cv p
+{
+   position: absolute;
+   text-align: left;
+   inset: auto auto 1rem 1rem;
+   font-size: 1.5rem;
+   color: #fff;
+}
+
+.bl-info .cv img
+{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.bl-info .text
+{
+   flex: 2;
+   background: #ffffff05;
+   border: 1px solid #cccccc10;
+   padding: 2rem;
+   color: #666;
+   font-size: 1.2rem;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   line-height: 150%;
+}
+
+/* *** Jogos *** */
+
+.dtl.pj 
+{
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 20px;
+   padding: 20px;
+   margin-top: 2rem;
+}
+
+.game__card 
+{
+   position: relative;
+   overflow: hidden;
+   height: 400px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   transition: transform 0.3s ease;
+}
+
+.game__card:hover {transform: scale(1.05);}
+
+.game__card img 
+{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   transition: 0.3s all ease;
+   filter: grayscale(100%);
+   user-select: none;
+}
+
+.game__card:hover img
+{
+   transform: scale(1.1);
+   filter: grayscale(0);
+}
+
+.title-pj
+{
+   position: absolute;
+   inset: auto auto 0 0;
+   width: 100%;
+   padding: 10px;
+   color: white;
+   background-color: #111;
+   text-align: center;
+   font-size: 14px;
+   font-family: 'Paradise';
+}
+
+/* Responsividade */
+
+@media (max-width: 1024px) 
+{
+  .dtl.pj {grid-template-columns: repeat(3, 1fr);}
+}
+
+@media (max-width: 768px) 
+{
+  .dtl.pj {grid-template-columns: repeat(2, 1fr);}
+}
+
+@media (max-width: 480px) 
+{
+   .dtl.pj {grid-template-columns: 1fr;}
+}
+
+/* *** contato *** */
+
+.dtl.form
+{
+   display: flex;
+   flex-direction: row;
+   gap: 1rem;
+}
+
+form 
+{
+   width: 50%;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   padding: 0rem;
+   gap: 1rem;
+}
+
+form .field
+{
+   position: relative;
+}
+
+form :is(input, textarea) 
+{
+   width: 100%;
+   background: none;
+   border: 1px solid #cccccc50;
+   outline: none;
+   padding: 1rem 1.5rem;
+   color: #ccc;
+}
+
+form :is(input, textarea)::placeholder
+{
+   color: #cccccc40;
+}
+
+form textarea
+{
+   height: 150px;
+   resize: none;
+}
+
+form textarea::-webkit-scrollbar
+{
+   width: 8px;
+   background: #cccccc50;
+}
+
+form textarea::-webkit-scrollbar-thumb
+{
+   width: 100%;
+   background: #555;
+}
+
+form .field:nth-child(3),
+form .field:nth-child(4)  {grid-column: span 2;}
+
+form label 
+{
+   position: absolute;
+   color: #555;
+   text-transform: uppercase;
+   letter-spacing: 1.5px;
+   font-size: .8rem;
+   inset: -.6rem auto auto .5rem;
+   background: #000;
+   padding: 0 .4rem;
+}
+
+form label span
+{
+   color: #539348;
+   font-size: 1rem
+}
+
+form button 
+{
+   grid-column: span 2;
+   background: #539348;
+   color: #000;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   font-size: 1.05rem;
+   border: none;
+   padding: 1rem;
+   cursor: pointer;
+}
+
+.bl-data
+{
+   width: 50%;
+   border: 1px solid #cccccc50;
+   padding: 1.9rem;
+   height: auto;
+}
+
+.bl-data h3
+{
+   color: #999;
+   margin-bottom: 1.2rem;
+}
+
+.bl-data p
+{
+   font-size: .9rem;
+   color: #666;
+   margin-bottom: .8rem;
+}
+
+.bl-data ul
+{
+   display: flex;
+   flex-direction: column;
+   gap: .5rem;
+}
+
+.bl-data ul li a
+{
+   color: #777;
+   font-size: .85rem;
+}
+
+.bl-data ul li a i,
+.bl-data p i
+{
+   margin-right: .5rem;
+   color: #539348;
+}
+
+/* *** Rodapé *** */
+
+footer
+{
+   width: 100%;
+   padding: 1.5rem 2rem;
+   background: #222;
+   text-align: center;
+}
+
+footer p
+{
+   color: #999;
+   font-size: .9rem;
+}
+
+
+/* *** Media Queries *** */
+
+@media (max-width: 750px)
+{
+   .dtl.form {flex-direction: column;}
+
+   form, .bl-data {width: 100%;}
+
+   .bl-info .cv p
+   {
+      font-size: 1.2rem;
+   }
+
+   .dtl .bl-info
+   {
+      gap: 2rem;
+      margin-bottom: 4rem;
+   }
+}
+
+@media (max-width: 600px)
+{
+   .dtl .bl-info
+   {
+      flex-direction: column;
+   }
+
+   .bl-info .cv p {font-size: 1rem;}
+   .bl-info .text {font-size: 1rem;}
+
+   .game__card {height: 300px;}
+}
